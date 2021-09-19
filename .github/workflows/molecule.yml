@@ -33,7 +33,9 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
       - name: install requirements
-        uses: py-actions/py-dependency-install@v2
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
       - name: Molecule
         uses: gofrolist/molecule-action@v2
         with:
