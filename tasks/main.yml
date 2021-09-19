@@ -1,2 +1,4 @@
 ---
-# tasks file for roles/ansible-role-alacritty/.
+- name: Include arch tasks
+  include_tasks: arch.yml
+  when: ansible_distribution in ["Archlinux"]

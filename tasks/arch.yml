@@ -1,0 +1,5 @@
+---
+- name: Install needed libraries to build Alacritty
+  community.general.pacman:
+    name: ["cmake", "freetype2", "fontconfig", "pkg-config", "make", "libxcb", "libxkbcommon", "python"]
+  become: true
