@@ -42,7 +42,7 @@ jobs:
         uses: py-actions/py-dependency-install@v2
       - name: Molecule
         run: |
-          moelcule --debug test --scenario-name ${{ matrix.scenario }}
+          molecule --debug test --scenario-name ${{ matrix.scenario }}
       # - name: Molecule
       #   uses: gofrolist/molecule-action@v2
       #   with:
