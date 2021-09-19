@@ -28,8 +28,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        # with:
-        #   path: "${{ github.repository }}"
       - name: Setup python
         uses: actions/setup-python@v2
         with:
