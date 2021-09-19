@@ -12,6 +12,8 @@ on:
 jobs:
   molecule:
     runs-on: ubuntu-latest
+    env:
+      ANSIBLE_FORCE_COLOR: true 
     strategy:
       fail-fast: false
       matrix:
